@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    /* z-index: -1; */
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #413c68;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #413c68;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+  }
+ #button{
+    color: white;
+    background: lightblue;
+    border: none;
+    margin-right: 5vh;
+    margin-top: 1vh;
+    width: 5vw;
+    height: 5vh;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#413c68;
+    height: 7.6vh;
+    margin-left: 21vh;
+    align-items: flex-end;
+  }
+  li {
+    float: right;
+  }
+  h3{
+    color: #413c68;
+  }
+table{
+    width: 100%;
+    background-color: #ffffff;
+}
+.info-row{
+  /* height: 10vh; */
+}
+th {
+    border-collapse: collapse;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: Montserrat,Arial,sans-serif;
+    background: #413c68;
+}
+table, td {
+    border: 1px solid #1f194c;
+    border-collapse: collapse;
+    align-items: center;
+    text-align: center;
+    color: #1f194c;
+    font-family: Montserrat,Arial,sans-serif;
+}
+.Button{
+  background: #413c60;
+  /* padding: 10px 30px; */
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+  border-radius: 5vh;
+  cursor: pointer;
+}
+.Button:hover{
+    background-color: red;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
